@@ -14,11 +14,20 @@ public class Apartment extends Property {
         return nrOfRooms;
     }
 
+    public void setNrOfRooms(int nrOfRooms) {
+        this.nrOfRooms = nrOfRooms;
+    }
+
     public String getOwner() {
         return owner;
     }
 
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
+
+    @Override
     public String toString() {
-        return "Apartment: " + nrOfRooms + " rooms, owned by " + owner;
+        return "Property Apartment" + " | Address: " + getAddress() + " | Surface: " + getSurface() + " | Rooms: " + nrOfRooms + " | Owner: " + owner;
     }
 }

@@ -13,7 +13,15 @@ public abstract class Property {
         return address;
     }
 
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     public int getSurface() {
         return surface;
     }
+
+    public void setSurface(int surface) {
+        this.surface = surface;
+    } 
 }

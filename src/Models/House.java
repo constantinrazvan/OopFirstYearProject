@@ -14,7 +14,20 @@ public class House extends Property{
         return nrOfFloors;
     }
 
+    public void setNrOfFloors(int nrOfFloors) {
+        this.nrOfFloors = nrOfFloors;
+    }
+
     public String getNeighbourhood() {
         return neighbourhood;
+    }
+
+    public void setNeighbourhood(String neighbourhood) {
+        this.neighbourhood = neighbourhood;
+    }
+
+    @Override
+    public String toString() {
+        return "Property: House " + " | Address: " + getAddress() + " | Surface: " + getSurface() +  " | Floors: " + nrOfFloors + " | Neighbourhood: " + neighbourhood;
     }
 }

@@ -7,7 +7,5 @@ public class Main {
         propertiesFrame.pack(); 
         propertiesFrame.setSize(700, 400);
         propertiesFrame.setVisible(true);
-
-
     }
 }
